@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import InfiniteScroll from 'react-infinite-scroll-component';
-import Image from './Image';
+import React, { Component } from "react";
+import axios from "axios";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Image from "./Image";
 
 export class Images extends Component {
   state = {
@@ -29,7 +29,7 @@ export class Images extends Component {
 
   render() {
     return (
-      <div className='images'>
+      <div className="images">
         <InfiniteScroll
           dataLength={this.state.images.length}
           next={this.fetchImages}
